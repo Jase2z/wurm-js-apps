@@ -1,3 +1,13 @@
+fieldset.skill_sliders {
+  width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+fieldset.grouping_radio {
+  width: max-content;
+}
+
 div.slide_box {
   width: max-content;
   display: flex;

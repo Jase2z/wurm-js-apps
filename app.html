@@ -8,22 +8,31 @@
   </head>
   <body>
     
-    <div class="slide_box">
-      <p>
-        <label>Farming skill: ... <span id="skill_span" display=inline float=left></span></label>
-        <input type="range" min="1" max="99" value="50" step=1 class="slider" id="skill_in" name="skill_in" placeholder=50 >
-      </p>
-      <p>
-        <label>Tool QL: ........... <span id="tool_ql_span" display=inline float=left></span></label>
-        <input type="range" min="1" max="99" value="25" step=1 class="slider" id="tool_ql_in" name="tool_ql_in" placeholder=25>
-      </p>
-      <p>  
-        <label>Tool skill: ......... <span id="tool_skill_span" display=inline float=left></span></label>  
-        <input type="range" min="1" max="99" value="30" step=1 class="slider" id="tool_skill_in" name="tool_skill_in" placeholder=30>
-      </p>
-    </div>
-  
-    <div>
+    <form>
+      <fieldset class="skill_sliders">
+        <legend> Drag slider to select skill level.</legend>
+        <p>
+          <label for="skill_in" id="skill_in_label"></label>
+          <input type="range" min="1" max="99" value="75" step=1 class="slider" id="skill_in" name="skill_in" placeholder=50 >
+        </p>
+        <p>
+          <label for="tool_ql_in" id="tool_ql_label"></label>
+          <input type="range" min="1" max="99" value="50" step=1 class="slider" id="tool_ql_in" name="tool_ql_in" placeholder=25>
+        </p>
+        <p>  
+          <label for="tool_skill_in" id="tool_skill_label"></label>  
+          <input type="range" min="1" max="99" value="75" step=1 class="slider" id="tool_skill_in" name="tool_skill_in" placeholder=30>
+        </p>
+        <p>  
+          <label for="parent_skill_in" id="parent_skill_label"></label>  
+          <input type="range" min="1" max="99" value="75" step=1 class="slider" id="parent_skill_in" name="parent_skill_in" placeholder=30>
+        </p>
+        <p>
+          <label for ="group_skills">Group skills together?</label>
+          <input type="checkbox" id="group_skills" name="group_skills" value="group_skills" checked>
+        </p>
+      </fieldset>
+    </form>
       <p>Modified skill: <span id="Modified_span"></span>
         -- Target difficulty: <span id="diff_span"></span></p>
       <p>Easy: <span id="Easy_span"></span></p>
